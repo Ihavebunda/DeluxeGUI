@@ -1,0 +1,434 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local TheGUI = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Menus = Instance.new("ScrollingFrame")
+local Main = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local Misc = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Games = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Main2 = Instance.new("ScrollingFrame")
+local Fly = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Misc_2 = Instance.new("ScrollingFrame")
+local Games_2 = Instance.new("ScrollingFrame")
+local DeluxeHood = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local DeluxeCheats = Instance.new("ScrollingFrame")
+local Frame = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local Money = Instance.new("TextLabel")
+local Rank = Instance.new("TextLabel")
+local CurrentMenu = Instance.new("TextLabel")
+local Key = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local Login = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local Password = Instance.new("TextBox")
+local UICorner_10 = Instance.new("UICorner")
+local Successful = Instance.new("Frame")
+local UICorner_11 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+
+--Properties:
+
+TheGUI.Name = "TheGUI"
+TheGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+TheGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = TheGUI
+MainFrame.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+MainFrame.Position = UDim2.new(0.326768786, 0, 0.278527588, 0)
+MainFrame.Size = UDim2.new(0, 473, 0, 360)
+MainFrame.Visible = false
+
+UICorner.Parent = MainFrame
+
+Menus.Name = "Menus"
+Menus.Parent = MainFrame
+Menus.Active = true
+Menus.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Menus.BorderSizePixel = 0
+Menus.Position = UDim2.new(0, 0, 0.088888891, 0)
+Menus.Size = UDim2.new(0, 100, 0, 311)
+Menus.CanvasSize = UDim2.new(0, 0, 1, 0)
+
+Main.Name = "Main"
+Main.Parent = Menus
+Main.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Main.Position = UDim2.new(0.0700000077, 0, 0.0380768627, 0)
+Main.Size = UDim2.new(0, 73, 0, 28)
+Main.Font = Enum.Font.GothamMedium
+Main.Text = "Main"
+Main.TextColor3 = Color3.fromRGB(255, 255, 255)
+Main.TextSize = 14.000
+
+UICorner_2.Parent = Main
+
+Misc.Name = "Misc"
+Misc.Parent = Menus
+Misc.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Misc.Position = UDim2.new(0.0700000077, 0, 0.135299087, 0)
+Misc.Size = UDim2.new(0, 73, 0, 28)
+Misc.Font = Enum.Font.GothamMedium
+Misc.Text = "Misc"
+Misc.TextColor3 = Color3.fromRGB(255, 255, 255)
+Misc.TextSize = 14.000
+
+UICorner_3.Parent = Misc
+
+Games.Name = "Games"
+Games.Parent = Menus
+Games.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Games.Position = UDim2.new(0.0700000077, 0, 0.229743525, 0)
+Games.Size = UDim2.new(0, 73, 0, 28)
+Games.Font = Enum.Font.GothamMedium
+Games.Text = "Games"
+Games.TextColor3 = Color3.fromRGB(255, 255, 255)
+Games.TextSize = 14.000
+
+UICorner_4.Parent = Games
+
+Main2.Name = "Main2"
+Main2.Parent = MainFrame
+Main2.Active = true
+Main2.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Main2.Position = UDim2.new(0.250734478, 0, 0.088888891, 0)
+Main2.Size = UDim2.new(0, 343, 0, 311)
+
+Fly.Name = "Fly"
+Fly.Parent = Main2
+Fly.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Fly.Position = UDim2.new(0.0524781346, 0, 0.00813940167, 0)
+Fly.Size = UDim2.new(0, 307, 0, 50)
+Fly.Font = Enum.Font.GothamMedium
+Fly.Text = "Fly (f)"
+Fly.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fly.TextSize = 14.000
+
+UICorner_5.CornerRadius = UDim.new(0, 12)
+UICorner_5.Parent = Fly
+
+Misc_2.Name = "Misc"
+Misc_2.Parent = MainFrame
+Misc_2.Active = true
+Misc_2.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Misc_2.Position = UDim2.new(0.250734478, 0, 0.088888891, 0)
+Misc_2.Size = UDim2.new(0, 343, 0, 311)
+Misc_2.Visible = false
+
+Games_2.Name = "Games"
+Games_2.Parent = MainFrame
+Games_2.Active = true
+Games_2.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Games_2.Position = UDim2.new(0.250734478, 0, 0.088888891, 0)
+Games_2.Size = UDim2.new(0, 343, 0, 311)
+Games_2.Visible = false
+
+DeluxeHood.Name = "DeluxeHood"
+DeluxeHood.Parent = Games_2
+DeluxeHood.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+DeluxeHood.Position = UDim2.new(0.0524781346, 0, 0.00813940167, 0)
+DeluxeHood.Size = UDim2.new(0, 307, 0, 50)
+DeluxeHood.Font = Enum.Font.GothamMedium
+DeluxeHood.Text = "Deluxe Hood"
+DeluxeHood.TextColor3 = Color3.fromRGB(255, 255, 255)
+DeluxeHood.TextSize = 14.000
+
+UICorner_6.CornerRadius = UDim.new(0, 12)
+UICorner_6.Parent = DeluxeHood
+
+DeluxeCheats.Name = "DeluxeCheats"
+DeluxeCheats.Parent = MainFrame
+DeluxeCheats.Active = true
+DeluxeCheats.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+DeluxeCheats.Position = UDim2.new(0.248675674, 0, 0.088888891, 0)
+DeluxeCheats.Size = UDim2.new(0, 343, 0, 310)
+DeluxeCheats.Visible = false
+
+Frame.Parent = DeluxeCheats
+Frame.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+Frame.Position = UDim2.new(0.0378953591, 0, 0.0090274401, 0)
+Frame.Size = UDim2.new(0, 313, 0, 109)
+
+UICorner_7.CornerRadius = UDim.new(0, 12)
+UICorner_7.Parent = Frame
+
+Money.Name = "Money"
+Money.Parent = Frame
+Money.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Money.BackgroundTransparency = 1.000
+Money.Position = UDim2.new(0.0702875406, 0, 0.0825688094, 0)
+Money.Size = UDim2.new(0, 155, 0, 31)
+Money.Font = Enum.Font.GothamMedium
+Money.Text = "Money: ???"
+Money.TextColor3 = Color3.fromRGB(255, 255, 255)
+Money.TextSize = 14.000
+
+Rank.Name = "Rank"
+Rank.Parent = Frame
+Rank.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rank.BackgroundTransparency = 1.000
+Rank.Position = UDim2.new(0.0702875406, 0, 0.458715618, 0)
+Rank.Size = UDim2.new(0, 155, 0, 31)
+Rank.Font = Enum.Font.GothamMedium
+Rank.Text = "Rank: ???"
+Rank.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rank.TextSize = 14.000
+
+CurrentMenu.Name = "CurrentMenu"
+CurrentMenu.Parent = MainFrame
+CurrentMenu.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CurrentMenu.BackgroundTransparency = 1.000
+CurrentMenu.Position = UDim2.new(0, 0, -0.00277777785, 0)
+CurrentMenu.Size = UDim2.new(0, 174, 0, 33)
+CurrentMenu.Font = Enum.Font.GothamMedium
+CurrentMenu.Text = "Main"
+CurrentMenu.TextColor3 = Color3.fromRGB(255, 255, 255)
+CurrentMenu.TextSize = 24.000
+
+Key.Name = "Key"
+Key.Parent = TheGUI
+Key.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Key.Position = UDim2.new(0.401167035, 0, 0.300613493, 0)
+Key.Size = UDim2.new(0, 271, 0, 325)
+
+UICorner_8.CornerRadius = UDim.new(0, 12)
+UICorner_8.Parent = Key
+
+Login.Name = "Login"
+Login.Parent = Key
+Login.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+Login.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Login.Position = UDim2.new(0.166051656, 0, 0.698461533, 0)
+Login.Size = UDim2.new(0, 180, 0, 45)
+Login.Font = Enum.Font.GothamMedium
+Login.Text = "Login"
+Login.TextColor3 = Color3.fromRGB(255, 255, 255)
+Login.TextSize = 24.000
+Login.TextWrapped = true
+
+UICorner_9.CornerRadius = UDim.new(0, 12)
+UICorner_9.Parent = Login
+
+TextLabel.Parent = Key
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0516605154, 0, 0.0338461548, 0)
+TextLabel.Size = UDim2.new(0, 244, 0, 77)
+TextLabel.Font = Enum.Font.GothamMedium
+TextLabel.Text = "Get Your Key In The Discord Server!"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+
+TextLabel_2.Parent = Key
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.0516605154, 0, 0.144615397, 0)
+TextLabel_2.Size = UDim2.new(0, 244, 0, 41)
+TextLabel_2.Font = Enum.Font.GothamMedium
+TextLabel_2.Text = ".gg/7dngUGTu6j"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 14.000
+
+Password.Name = "Password"
+Password.Parent = Key
+Password.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+Password.Position = UDim2.new(0.129151285, 0, 0.507692337, 0)
+Password.Size = UDim2.new(0, 200, 0, 50)
+Password.Font = Enum.Font.GothamMedium
+Password.Text = "(Key Here)"
+Password.TextColor3 = Color3.fromRGB(255, 255, 255)
+Password.TextSize = 24.000
+
+UICorner_10.CornerRadius = UDim.new(0, 12)
+UICorner_10.Parent = Password
+
+Successful.Name = "Successful"
+Successful.Parent = TheGUI
+Successful.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Successful.Position = UDim2.new(0.401167035, 0, 0.37613368, 0)
+Successful.Size = UDim2.new(0, 271, 0, 200)
+Successful.Visible = false
+
+UICorner_11.CornerRadius = UDim.new(0, 12)
+UICorner_11.Parent = Successful
+
+TextLabel_3.Parent = Successful
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.070110701, 0, 0.0719230622, 0)
+TextLabel_3.Size = UDim2.new(0, 233, 0, 170)
+TextLabel_3.Font = Enum.Font.GothamMedium
+TextLabel_3.Text = "Successfully Logged In!"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+-- Scripts:
+
+local function LABITO_fake_script() -- Main.Script 
+	local script = Instance.new('Script', Main)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Main2.Visible = true
+		script.Parent.Parent.Parent.DeluxeCheats.Visible = false
+		script.Parent.Parent.Parent.Misc.Visible = false
+		script.Parent.Parent.Parent.Games.Visible = false
+		script.Parent.Parent.Parent.CurrentMenu.Text = "Main"
+	end)
+end
+coroutine.wrap(LABITO_fake_script)()
+local function CXYQUN_fake_script() -- Misc.Script 
+	local script = Instance.new('Script', Misc)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Misc.Visible = true
+		script.Parent.Parent.Parent.DeluxeCheats.Visible = false
+		script.Parent.Parent.Parent.Main2.Visible = false
+		script.Parent.Parent.Parent.Games.Visible = false
+		script.Parent.Parent.Parent.CurrentMenu.Text = "Misc"
+	end)
+end
+coroutine.wrap(CXYQUN_fake_script)()
+local function HUFG_fake_script() -- Games.Script 
+	local script = Instance.new('Script', Games)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Games.Visible = true
+		script.Parent.Parent.Parent.DeluxeCheats.Visible = false
+		script.Parent.Parent.Parent.Main2.Visible = false
+		script.Parent.Parent.Parent.Misc.Visible = false
+		script.Parent.Parent.Parent.CurrentMenu.Text = "Games"
+	end)
+end
+coroutine.wrap(HUFG_fake_script)()
+local function JDTK_fake_script() -- DeluxeHood.Script 
+	local script = Instance.new('Script', DeluxeHood)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.DeluxeCheats.Visible = true
+		script.Parent.Parent.Parent.Main2.Visible = false
+		script.Parent.Parent.Parent.Misc.Visible = false
+		script.Parent.Parent.Parent.Games.Visible = false
+		script.Parent.Parent.Parent.CurrentMenu.Text = "Deluxe Cheats"
+	end)
+end
+coroutine.wrap(JDTK_fake_script)()
+local function XNAJSA_fake_script() -- Money.LocalScript 
+	local script = Instance.new('LocalScript', Money)
+
+	local abbreviations = {"","K+","M+","B+","Qa+","Qi+","Sx+","Sp+","Oc+","No+","Dc+","Un+","Duo+","Tre+","Qua+","Qui+","Sed+",}
+	
+	
+	
+	local function Format(value, idp)
+		local ex = math.floor(math.log(math.max(1, math.abs(value)),1000))
+		local abbrevs = abbreviations [1 + ex] or ("e+"..ex)
+		local normal = math.floor(value *((10 ^ idp) / (1000 ^ ex))) / (10 ^ idp)
+	
+		return ("%."..idp.."f%s"):format(normal, abbrevs)
+	
+	end
+	
+	while wait() do
+		local player = game.Players.LocalPlayer
+		script.Parent.Text = "Money: "..Format(player.leaderstats.Money.Value, 2)
+	end
+end
+coroutine.wrap(XNAJSA_fake_script)()
+local function ZASLDUA_fake_script() -- Money.Script 
+	local script = Instance.new('Script', Money)
+
+	local abbreviations = {"","K+","M+","B+","Qa+","Qi+","Sx+","Sp+","Oc+","No+","Dc+","Un+","Duo+","Tre+","Qua+","Qui+","Sed+",}
+	
+	
+	
+	local function Format(value, idp)
+		local ex = math.floor(math.log(math.max(1, math.abs(value)),1000))
+		local abbrevs = abbreviations [1 + ex] or ("e+"..ex)
+		local normal = math.floor(value *((10 ^ idp) / (1000 ^ ex))) / (10 ^ idp)
+	
+		return ("%."..idp.."f%s"):format(normal, abbrevs)
+	
+	end
+	
+	while wait() do
+		local player = game.Players.LocalPlayer
+		script.Parent.Text = "Money: "..Format(player.leaderstats.Money.Value, 2)
+	end
+end
+coroutine.wrap(ZASLDUA_fake_script)()
+local function CTWH_fake_script() -- Rank.LocalScript 
+	local script = Instance.new('LocalScript', Rank)
+
+	script.Parent.Parent.Rank.Text = "Rank: "..game.Players.LocalPlayer:GetRoleInGroup(14627011)
+end
+coroutine.wrap(CTWH_fake_script)()
+local function ITPB_fake_script() -- Rank.Script 
+	local script = Instance.new('Script', Rank)
+
+	script.Parent.Parent.Rank.Text = "Rank: "..game.Players.LocalPlayer:GetRoleInGroup(14627011)
+end
+coroutine.wrap(ITPB_fake_script)()
+local function UMFJG_fake_script() -- Login.Script 
+	local script = Instance.new('Script', Login)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.Password.Text == "gh0ul" then
+			script.Parent.Parent.Parent.Key.Visible = false
+			script.Parent.Parent.Parent.Successful.Visible = true
+			wait(2)
+			script.Parent.Parent.Parent.Successful.Visible = false
+			script.Parent.Parent.Parent.MainFrame.Visible = true
+		end
+	end)
+end
+coroutine.wrap(UMFJG_fake_script)()
+local function ZCDW_fake_script() -- Login.LocalScript 
+	local script = Instance.new('LocalScript', Login)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.Password.Text == "gh0ul" then
+			script.Parent.Parent.Parent.Key.Visible = false
+			script.Parent.Parent.Parent.Successful.Visible = true
+			wait(2)
+			script.Parent.Parent.Parent.Successful.Visible = false
+			script.Parent.Parent.Parent.MainFrame.Visible = true
+		end
+	end)
+end
+coroutine.wrap(ZCDW_fake_script)()
+local function EFQN_fake_script() -- TheGUI.Script 
+	local script = Instance.new('Script', TheGUI)
+
+	local L_1_ = Instance.new("BindableFunction")
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "Deluxe GUI Loaded";
+		Text = "GUI Loaded";
+		Duration = 5;
+		Button1 = "Nice!";
+		Callback = L_1_
+	})
+end
+coroutine.wrap(EFQN_fake_script)()
+local function YFATMC_fake_script() -- TheGUI.Drags 
+	local script = Instance.new('Script', TheGUI)
+
+	local frame = script.Parent.MainFrame
+	
+	frame.Draggable = true
+	frame.Selectable = true
+	frame.Active = true
+end
+coroutine.wrap(YFATMC_fake_script)()
